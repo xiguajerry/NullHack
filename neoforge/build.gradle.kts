@@ -16,10 +16,6 @@ repositories {
     mavenCentral()
 }
 
-tasks.javadoc {
-    enabled = false
-}
-
 val modLibrary by configurations.creating
 
 dependencies {
@@ -42,14 +38,6 @@ sourceSets {
 
 kotlin {
     jvmToolchain(21)
-}
-
-tasks.shadowJar {
-    configurations = listOf(modLibrary)
-}
-
-tasks.build {
-    finalizedBy(tasks.shadowJar)
 }
 
 tasks.compileKotlin {
@@ -90,10 +78,11 @@ neoForge {
         create("${property("mod_id")}") {
             sourceSet(sourceSets["main"])
         }
-//        create("${property("mod_id")}-service") {
-//            sourceSet(sourceSets["service"])
-//        }
     }
+}
+
+tasks.build {
+    finalizedBy(tasks.shadowJar)
 }
 
 tasks.shadowJar {
@@ -101,5 +90,6 @@ tasks.shadowJar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
+tasks.javadoc { enabled = false }
 tasks.javadocJar { enabled = false }
 tasks.sourcesJar { enabled = false }

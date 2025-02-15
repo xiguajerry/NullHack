@@ -9,10 +9,13 @@ import java.util.*
 plugins {
     java
     kotlin("jvm") version "2.1.0"
-    id("fabric-loom") version "1.9-SNAPSHOT" apply false
     id("com.gradleup.shadow") version "8.3.6" apply false
+    id("org.spongepowered.mixin") version "0.7-SNAPSHOT" apply false
+    id("fabric-loom") version "1.9-SNAPSHOT" apply false
     id("net.neoforged.moddev") version "2.0.78" apply false
+    id("net.minecraftforge.gradle") version "[6.0.30,6.2)" apply false
 }
+
 group = "love.xiguajerry"
 version = "0.1.0"
 

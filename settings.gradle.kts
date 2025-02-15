@@ -57,3 +57,4 @@ rootProject.name = "nullhack-nextgen"
 include("common")
 include("neoforge")
 include("fabric")
+//include("forge")
