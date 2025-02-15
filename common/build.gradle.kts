@@ -75,7 +75,6 @@ dependencies {
 
     library("org.jetbrains.kotlin:kotlin-stdlib")
     library("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1")
-    library("org.apache.bcel:bcel:6.9.0")
     library("org.reflections:reflections:${reflections_version}")
     library("com.squareup.okhttp3:okhttp:4.12.0")
     library("dev.fastmc:fastmc-common:1.1-SNAPSHOT")
@@ -94,8 +93,6 @@ dependencies {
 
     library("org.jcodec:jcodec:0.2.5")
     library("org.jcodec:jcodec-javase:0.2.5")
-    library("org.bytedeco:ffmpeg:7.1-1.5.11")
-    library("org.bytedeco", "ffmpeg", "7.1-1.5.11", classifier = "windows-x86_64")
 }
 
 kotlin {
