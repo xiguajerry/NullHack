@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "love.xiguajerry.nullhack.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "priority": 2100000000,
+  "client": [
+    "gui.screen.MixinSearchManager"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
