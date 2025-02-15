@@ -8,8 +8,17 @@ A utility mod migrated to the newest Minecraft versions via Fabric, Neoforge & M
 - OS: Windows. Linux will be supported in the future(native dependencies' matter).
 - CPU: 6th Gen Intel Core i3 or AMD equivalent.
 - Ram: At least 6GB for Minecraft.
-- Graphics: OpenGL 4.6. You may check this via GPU-Z.
+- Graphics: OpenGL 4.5, or OpenGL 4.3 at minimum (See [Additional requirements](#additional-requirements-from-features)). 
+You may check the capabilities of your graphics card via GPU-Z.
 
+### Additional requirements from features
+- `GL_ARB_sparse_texture`, required by ArrayedUnicodeFontRenderer
+- `GL_ARB_debug_output`, required if the graphics device doesn't support GL43
+- `GL_ARB_direct_state_access`, required if the graphics device doesn't support GL45
+- `GL_ARB_gl_spirv`, reversed for future use if the graphics device doesn't support GL46
+- `GL_MAX_ARRAY_TEXTURE_LAYERS >= 512`, required by ArrayedUnicodeFontRenderer if the device doesn't support GL45
+- ArrayedUnicodeFontRenderer is not expected to work on Intel graphics cards.
+The feature should be disabled when such a device is used to run Minecraft.
 
 ## Screenshots
 <details>

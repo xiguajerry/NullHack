@@ -23,6 +23,7 @@ val fapi_version: String by project
 val reflections_version: String by project
 
 val kmogusVersion= "1.1-SNAPSHOT"
+
 val lwjglNatives = Pair(
     System.getProperty("os.name")!!,
     System.getProperty("os.arch")!!
@@ -38,13 +39,17 @@ val lwjglNatives = Pair(
             else
                 "natives-linux"
         arrayOf("Mac OS X", "Darwin").any { name.startsWith(it) }     ->
-            "natives-macos${if (arch.startsWith("aarch64")) "-arm64" else ""}"
+            "natives-macos-arm64"
         arrayOf("Windows").any { name.startsWith(it) }                ->
-            "natives-windows"
+            if (arch.contains("64"))
+                "natives-windows${if (arch.startsWith("aarch64")) "-arm64" else ""}"
+            else
+                "natives-windows-x86"
         else                                                                            ->
             throw Error("Unrecognized or unsupported platform. Please set \"lwjglNatives\" manually")
     }
 }
+
 
 neoForge {
     neoFormVersion = property("neo_form_version")!!.toString()
@@ -84,10 +89,10 @@ dependencies {
     library("org.luaj:luaj-jse:3.0.1")
     library("io.github.spair:imgui-java-app:1.89.0")
 
-    library("org.lwjgl:lwjgl-assimp:3.3.3") {
+    library("org.lwjgl:lwjgl-assimp:3.3.4") {
         exclude("org.lwjgl", "lwjgl")
     }
-    library("org.lwjgl", "lwjgl-assimp", "3.3.3", classifier = lwjglNatives) {
+    library("org.lwjgl", "lwjgl-assimp", "3.3.4", classifier = lwjglNatives) {
         exclude("org.lwjgl", "lwjgl")
     }
 
