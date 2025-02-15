@@ -40,7 +40,7 @@ You may use code published here in your own projects (if open-source) under the 
 
 ## Feedback
 
-If you encounter conflicts with other mods, open an issue in this repository.
+If you encounter bugs or conflicts with other mods, please open an issue in this repository.
 Conflicts with Sodium or Iris are prioritized.
 
 
