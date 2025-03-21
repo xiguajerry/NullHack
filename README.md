@@ -2,6 +2,10 @@
 
 A utility mod migrated to the newest Minecraft versions via Fabric, Neoforge & Mixin.
 
+## Disclaimer
+
+**This project is for educational purposes only. I shall not be held responsible for any personal losses or legal liabilities arising from the use of this project.**
+
 
 ## Requirements
 
