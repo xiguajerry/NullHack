@@ -2,6 +2,9 @@
 
 A utility mod migrated to the newest Minecraft versions via Fabric, Neoforge & Mixin.
 
+Support for 1.21.5 and newer mc versions will be released with both OpenGL & Vulkan support after mc's Vulkan backend is implemented.
+Before that I will continue the development of NullHack privately. You can keep contact with me by opening an issue in this repo.
+
 ## Disclaimer
 
 **This project is for educational purposes only. I shall not be held responsible for any personal losses or legal liabilities arising from the use of this project.**
@@ -12,7 +15,7 @@ A utility mod migrated to the newest Minecraft versions via Fabric, Neoforge & M
 - OS: Windows. Linux will be supported in the future(native dependencies' matter).
 - CPU: 6th Gen Intel Core i3 or AMD equivalent.
 - Ram: At least 6GB for Minecraft.
-- Graphics: OpenGL 4.5, or OpenGL 4.3 at minimum (See [Additional requirements](#additional-requirements-from-features)). 
+- Graphics: OpenGL 4.5 or Vulkan 1.3 (See [Additional requirements](#additional-requirements-from-features)). 
 You may check the capabilities of your graphics card via GPU-Z.
 
 ### Additional requirements from features
