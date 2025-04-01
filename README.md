@@ -52,7 +52,7 @@ enabled and you'll see the configuration screen.
 
 This repository is licensed under the GNU General Public License v3. 
 You may use code published here in your own projects (if open-source) under the same license.
-
+You may use the code from this repository if and only if your project is open-source, and your distributions must be under the same license.
 
 ## Feedback
 
