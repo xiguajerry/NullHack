@@ -64,3 +64,6 @@ Conflicts with Sodium or Iris are prioritized.
 
 - [TrollHack](https://github.com/Luna5ama/TrollHack), [Kmogus](https://github.com/Luna5ama/Kmogus) by [Luna5ama](https://github.com/Luna5ama)
 - [Boar/AimTrainer](https://github.com/SpartanB312/AimTrainer) by [SpartanB312](https://github.com/SpartanB312)
+
+## Friendship Links
+[Sakura](https://github.com/ExceptionTeam6969/Sakura)
