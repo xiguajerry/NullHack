@@ -2,13 +2,20 @@
 
 A utility mod migrated to the newest Minecraft versions via Fabric, Neoforge & Mixin.
 
+Support for 1.21.5 and newer mc versions will be released with both OpenGL & Vulkan support after mc's Vulkan backend is implemented.
+Before that I will continue the development of NullHack privately. You can keep contact with me by opening an issue in this repo.
+
+## Disclaimer
+
+**This project is for educational purposes only. I shall not be held responsible for any personal losses or legal liabilities arising from the use of this project.**
+
 
 ## Requirements
 
 - OS: Windows. Linux will be supported in the future(native dependencies' matter).
 - CPU: 6th Gen Intel Core i3 or AMD equivalent.
 - Ram: At least 6GB for Minecraft.
-- Graphics: OpenGL 4.5, or OpenGL 4.3 at minimum (See [Additional requirements](#additional-requirements-from-features)). 
+- Graphics: OpenGL 4.5 or Vulkan 1.3 (See [Additional requirements](#additional-requirements-from-features)). 
 You may check the capabilities of your graphics card via GPU-Z.
 
 ### Additional requirements from features
@@ -44,8 +51,8 @@ enabled and you'll see the configuration screen.
 ## License
 
 This repository is licensed under the GNU General Public License v3. 
-You may use code published here in your own projects (if open-source) under the same license.
 
+You may use the code from this repository if and only if your project is open-source, and your distributions must be under the same license.
 
 ## Feedback
 
@@ -57,3 +64,6 @@ Conflicts with Sodium or Iris are prioritized.
 
 - [TrollHack](https://github.com/Luna5ama/TrollHack), [Kmogus](https://github.com/Luna5ama/Kmogus) by [Luna5ama](https://github.com/Luna5ama)
 - [Boar/AimTrainer](https://github.com/SpartanB312/AimTrainer) by [SpartanB312](https://github.com/SpartanB312)
+
+## Friendship Links
+[Sakura](https://github.com/ExceptionTeam6969/Sakura)
