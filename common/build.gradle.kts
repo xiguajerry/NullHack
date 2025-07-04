@@ -87,12 +87,16 @@ dependencies {
     library("dev.luna5ama:kmogus-struct-api:$kmogusVersion")
     library("net.lenni0451:Reflect:1.3.4")
     library("org.luaj:luaj-jse:3.0.1")
-    library("io.github.spair:imgui-java-app:1.89.0")
+    library("io.github.spair:imgui-java-app:1.89.0") {
+        exclude("org.lwjgl", "lwjgl")
+        exclude("org.lwjgl", "lwjgl-glfw")
+        exclude("org.lwjgl", "lwjgl-opengl")
+    }
 
-    library("org.lwjgl:lwjgl-assimp:3.3.4") {
+    library("org.lwjgl:lwjgl-assimp:3.3.3") {
         exclude("org.lwjgl", "lwjgl")
     }
-    library("org.lwjgl", "lwjgl-assimp", "3.3.4", classifier = lwjglNatives) {
+    library("org.lwjgl", "lwjgl-assimp", "3.3.3", classifier = lwjglNatives) {
         exclude("org.lwjgl", "lwjgl")
     }
 
@@ -139,20 +143,20 @@ sourceSets {
     }
 }
 
-tasks.compileKotlin {
-    compilerOptions {
-        jvmTarget = JvmTarget.JVM_21
-        apiVersion = KotlinVersion.KOTLIN_2_2
-        languageVersion = KotlinVersion.KOTLIN_2_2
-        optIn = listOf("kotlin.RequiresOptIn", "kotlin.contracts.ExperimentalContracts")
-        freeCompilerArgs = listOf(
-            "-Xjvm-default=all-compatibility",
-            "-Xcontext-receivers"
-        )
-    }
-}
-
 tasks {
+    compileKotlin {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_21
+            apiVersion = KotlinVersion.KOTLIN_2_2
+            languageVersion = KotlinVersion.KOTLIN_2_2
+            optIn = listOf("kotlin.RequiresOptIn", "kotlin.contracts.ExperimentalContracts")
+            freeCompilerArgs = listOf(
+                "-Xjvm-default=all-compatibility",
+                "-Xcontext-receivers"
+            )
+        }
+    }
+
     jar {
         enabled = false
     }
